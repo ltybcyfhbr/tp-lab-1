@@ -13,8 +13,9 @@ bool checkPrime(unsigned int value)
 }
 unsigned long long nPrime(unsigned n)
 {
-	const int SIZE = 2000100;
-	int array[SIZE], i, j, v=0;
+	const int SIZE = 200000;
+	int *array = new int[SIZE];
+	int i, j, v=0;
 	for (i = 0; i < SIZE; i++)
 	{
 		array[i] = i;     
